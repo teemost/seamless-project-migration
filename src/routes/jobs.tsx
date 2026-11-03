@@ -5,7 +5,8 @@ import JobSearch from "@/components/urban/JobSearch";
 
 export const Route = createFileRoute("/jobs")({
   validateSearch: (search: Record<string, unknown>) => {
-    const q = typeof search.q === "string" && search.q.trim() ? search.q.trim() : undefined;
+    const raw = typeof search["q"] === "string" ? search["q"].trim() : "";
+    const q = raw ? raw : undefined;
     return q ? { q } : {};
   },
   head: () => ({
@@ -77,7 +78,7 @@ function JobsPage() {
             Send us your details and we will match you with suitable roles.
           </p>
         )}
-        <JobSearch defaultValue={q} />
+        <JobSearch defaultValue={q ?? ""} />
 
         <div className="TrustIndicatorsHeadCont">
           <h2 className="TrustIndicatorsHeadText">Browse by category</h2>
