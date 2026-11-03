@@ -8,3 +8,5 @@
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
+
+- The Urban site (imported from a code archive) runs on TanStack Router; its design CSS lives in src/urban.css and src/urban2.css with original class names kept intact, so edits should go there rather than Tailwind utilities in the components.
