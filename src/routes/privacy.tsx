@@ -32,53 +32,26 @@ function PrivacyPage() {
         title="Privacy Policy"
         subtitle="How we collect, use and protect your personal information."
       />
-      <div className="aboutUsContent" style={{ marginTop: 30 }}>
-        <p>
-          <em>
-            This is standard placeholder text. Please have it reviewed and
-            replaced with your organization's official policy before relying
-            on it.
-          </em>
-        </p>
-        <h3>Information we collect</h3>
-        <p>
-          When you contact us or apply for roles through this website, we
-          collect the information you provide, such as your name, contact
-          details, work history and the contents of your messages. We use this
-          information only to respond to your enquiry and to match you with
-          suitable opportunities or candidates.
-        </p>
-        <h3>How we use your information</h3>
-        <p>
-          We use your information to deliver our recruitment and staffing
-          services, to communicate with you about relevant opportunities, and
-          to improve our services. We do not sell your personal information to
-          third parties.
-        </p>
-        <h3>Sharing your information</h3>
-        <p>
-          Your information may be shared with prospective employers as part of
-          a recruitment process, but only with your knowledge and consent. We
-          may also use trusted service providers who help us operate our
-          business, under obligations to keep your information safe.
-        </p>
-        <h3>Data retention and security</h3>
-        <p>
-          We keep your information only as long as it is needed for the
-          purposes described above or as required by law, and we apply
-          reasonable technical and organizational measures to protect it.
-        </p>
-        <h3>Your rights</h3>
-        <p>
-          You may ask us to access, correct or delete the personal information
-          we hold about you at any time. To make a request, contact us through
-          the Support page.
-        </p>
-        <h3>Changes to this policy</h3>
-        <p>
-          We may update this policy from time to time. The latest version will
-          always be published on this page.
-        </p>
+      <div className="pageBodyCont">
+        <article className="legalBody">
+          <p className="legalUpdated">Last updated: June 2025</p>
+          <h3>Information we collect</h3>
+          <p>Candidates may share contact details, a resume or work history, skills, qualifications, availability, preferences, and messages they send us. Employers may share contact and business details, role requirements, hiring plans, and feedback about candidates.</p>
+          <p>We also receive information when you use the site, such as basic device or usage details, and information you choose to provide through forms or other communications.</p>
+          <h3>How we use it</h3>
+          <p>We use information to provide recruitment and staffing services, understand role requirements, assess and communicate about potential matches, respond to enquiries, and maintain and improve our site and services.</p>
+          <p>We use candidate information to consider relevant opportunities and, where appropriate, discuss a potential match with the candidate before introducing them to an employer.</p>
+          <h3>Sharing</h3>
+          <p>We share personal information only as needed to deliver the service, such as sharing relevant candidate details with an employer for a potential role, or role details with candidates. We may also share information with service providers who support our operations, and where necessary to protect people, our services, or comply with applicable requirements.</p>
+          <h3>Data retention</h3>
+          <p>We keep information for as long as reasonably needed for the recruitment relationship, the purposes described here, and routine business records. When information is no longer needed, we take reasonable steps to delete it or remove identifying details, subject to any applicable retention requirements.</p>
+          <h3>Your choices</h3>
+          <p>You can choose what information to provide, though this may affect our ability to consider you for roles or respond to a request. You may ask us to update or remove information we hold about you, or raise a privacy question, by contacting us via the support page.</p>
+          <h3>Cookies</h3>
+          <p>Our site may use cookies or similar technologies to support basic functionality and understand site usage. You can manage cookies through your browser settings; disabling them may affect some site features.</p>
+          <h3>Changes to this policy</h3>
+          <p>We may update this policy as our services or practices change. The latest version will be posted on this page with its updated date.</p>
+        </article>
       </div>
     </>
   );
