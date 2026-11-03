@@ -1,4 +1,6 @@
 import { Link } from "@tanstack/react-router";
+import { useState } from "react";
+import { Menu, X } from "lucide-react";
 
 const navLinks = [
   { to: "/", label: "Home" },
@@ -10,6 +12,8 @@ const navLinks = [
 ] as const;
 
 function Header() {
+  const [open, setOpen] = useState(false);
+
   return (
     <div className="headerHeadCont">
       <div className="logoName">
@@ -33,6 +37,30 @@ function Header() {
         ))}
       </nav>
       <h3 className="HeaderLogin">Login</h3>
+      <button
+        type="button"
+        className="navToggle"
+        aria-label={open ? "Close menu" : "Open menu"}
+        aria-expanded={open}
+        onClick={() => setOpen((v) => !v)}
+      >
+        {open ? <X size={24} /> : <Menu size={24} />}
+      </button>
+      {open && (
+        <nav className="headerMobileNav" aria-label="Mobile navigation">
+          {navLinks.map((item) => (
+            <Link
+              key={item.to}
+              to={item.to}
+              activeProps={{ className: "active-link" }}
+              className="headerMobileLink"
+              onClick={() => setOpen(false)}
+            >
+              {item.label}
+            </Link>
+          ))}
+        </nav>
+      )}
     </div>
   );
 }
