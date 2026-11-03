@@ -3,19 +3,19 @@
   "archive": "archive-reborn-canvas-main.zip",
   "stack": "TanStack Start (Vite + React 19), Tailwind v4, shadcn, plain brand CSS (src/urban.css, src/urban2.css)",
   "capabilities": [
-    {"capability": "code", "source": "archive", "outcome": "migrate", "status": "pending", "next_action": "copy routes, urban components, brand CSS, assets; verify build, tests, routes render"},
+    {"capability": "code", "source": "archive", "outcome": "migrate", "status": "verified", "next_action": null, "evidence": "9 routes copied; tsgo clean, vitest 1/1, Playwright all routes 200 with unique titles, no console errors, 0px mobile overflow, /jobs?q= filter renders"},
     {"capability": "schema", "source": "none in archive", "outcome": "absent", "status": "n/a", "next_action": null},
     {"capability": "records", "source": "none in archive", "outcome": "absent", "status": "n/a", "next_action": null},
     {"capability": "auth", "source": "none in archive (header Login link is a static label)", "outcome": "absent", "status": "n/a", "next_action": null},
     {"capability": "authorization", "source": "none in archive", "outcome": "absent", "status": "n/a", "next_action": null},
-    {"capability": "uploaded_files", "source": "public/images/workersBanner.png, workersBannerTransparent.png, favicon.svg", "outcome": "migrate", "status": "pending", "next_action": "copy into public/"},
+    {"capability": "uploaded_files", "source": "public/images/workersBanner.png, workersBannerTransparent.png, favicon.svg", "outcome": "migrate", "status": "verified", "next_action": null, "evidence": "workersBanner.png, workersBannerTransparent.png, favicon.svg copied to public/; hero renders in screenshots"},
     {"capability": "external_providers", "source": "none detected", "outcome": "absent", "status": "n/a", "next_action": null},
     {"capability": "public_endpoints", "source": "none detected", "outcome": "absent", "status": "n/a", "next_action": null},
     {"capability": "webhooks", "source": "none detected", "outcome": "absent", "status": "n/a", "next_action": null},
     {"capability": "schedules", "source": "none detected", "outcome": "absent", "status": "n/a", "next_action": null},
     {"capability": "secrets", "source": "no env vars in archive", "outcome": "absent", "status": "n/a", "next_action": null},
     {"capability": "cutover", "source": "no live deployment referenced", "outcome": "none", "status": "n/a", "next_action": null},
-    {"capability": "verification", "source": "this Lovable project", "outcome": "verify", "status": "pending", "next_action": "run vitest suite and Playwright route render checks"}
+    {"capability": "verification", "source": "this Lovable project", "outcome": "verify", "status": "verified", "next_action": null, "evidence": "build OK, typecheck clean, test suite green, routes exercised in browser"}
   ],
   "notes": [
     "Static recruitment marketing site, 9 routes (/; /about, /faqs, /hiring, /industries, /jobs, /privacy, /support, /terms). No backend, database, auth, records or integrations in the source.",
