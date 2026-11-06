@@ -13,7 +13,7 @@ function JobSearch({ defaultValue }: { defaultValue?: string }) {
   };
 
   return (
-    <div className="jobsHiringBtnCont">
+    <div className="jobSearchWrap">
       <form className="jobsHiringBtnCont" onSubmit={handleSubmit}>
         <div className="searchInputCont">
           <Search className="seach-icon" aria-hidden="true" />
@@ -22,7 +22,7 @@ function JobSearch({ defaultValue }: { defaultValue?: string }) {
             type="search"
             name="q"
             defaultValue={defaultValue}
-            placeholder="Search For Available Jobs Or Company"
+            placeholder="Search jobs or companies"
           />
         </div>
         <input className="searchSubmitBtn" type="submit" value="Search" />
