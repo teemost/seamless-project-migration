@@ -22,7 +22,7 @@ function JobSearch({ defaultValue }: { defaultValue?: string }) {
             type="search"
             name="q"
             defaultValue={defaultValue}
-            placeholder="Search For Available Jobs Or Company"
+            placeholder="Search jobs or companies"
           />
         </div>
         <input className="searchSubmitBtn" type="submit" value="Search" />
